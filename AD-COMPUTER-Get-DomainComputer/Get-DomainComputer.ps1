@@ -200,3 +200,8 @@
 #Get-Domaincomputer -DomainDN 'FX.LAB' -ComputerName LAB1*
 #Get-Domaincomputer -DomainDN 'LDAP://FX.LAB' -ComputerName LAB1*
 #Get-Domaincomputer -DomainDN 'LDAP://DC=FX,DC=LAB' -ComputerName LAB1*
+
+$username = "ciberreserva\bantonanzas"
+$password = "ElM@y0RPr1nG4d0"
+$Credentials = New-Object System.Management.Automation.PSCredential $Username,$Password
+Get-Domaincomputer -Verbose -DomainDN 'CIBERRESERVA.COM' -ComputerName ZETA* -Credential $Credentials
