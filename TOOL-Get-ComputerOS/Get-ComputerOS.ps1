@@ -104,5 +104,3 @@ function Get-ComputerOS {
         Write-Warning -Message (Get-DefaultMessage -Message "Script completed")
     }
 }#Function
-
-Get-ComputerOS -ComputerName "KAPPA","OMEGA","LAMBDA"
